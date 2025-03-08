@@ -17,10 +17,10 @@
   <parent>
     <groupId>org.apache.hadoop</groupId>
     <artifactId>hadoop-main</artifactId>
-    <version>3.1.1.3.1.4.0-315</version>
+    <version>3.4.0</version>
   </parent>
   <artifactId>hadoop-project</artifactId>
-  <version>3.1.1.3.1.4.0-315</version>
+  <version>3.4.0</version>
   <description>Apache Hadoop Project POM</description>
   <name>Apache Hadoop Project POM</name>
   <packaging>pom</packaging>
@@ -32,7 +32,7 @@
 
     <failIfNoTests>false</failIfNoTests>
     <maven.test.redirectTestOutputToFile>true</maven.test.redirectTestOutputToFile>
-    <jetty.version>9.3.24.v20180605</jetty.version>
+    <jetty.version>9.4.55.v20240627</jetty.version>
     <test.exclude>_</test.exclude>
     <test.exclude.pattern>_</test.exclude.pattern>
 
@@ -59,15 +59,15 @@
     <java.security.egd>file:///dev/urandom</java.security.egd>
 
     <!-- avro version -->
-    <avro.version>1.7.7</avro.version>
+    <avro.version>1.11.4</avro.version>
 
     <!-- jersey version -->
     <jersey.version>1.19</jersey.version>
 
     <!-- jackson versions -->
     <jackson.version>1.9.13</jackson.version>
-    <jackson2.version>2.9.9</jackson2.version>
-    <jackson.databind.version>2.9.9.1</jackson.databind.version>
+    <jackson2.version>2.11.4</jackson2.version>
+    <jackson.databind.version>2.12.7.1</jackson.databind.version>
 
     <!-- SLF4J version -->
     <slf4j.version>1.7.25</slf4j.version>
@@ -77,14 +77,14 @@
 
     <!-- ProtocolBuffer version, used to verify the protoc version and -->
     <!-- define the protobuf JAR version                               -->
-    <protobuf.version>2.5.0</protobuf.version>
+    <protobuf.version>3.25.5</protobuf.version>
     <protoc.path>${env.HADOOP_PROTOC_PATH}</protoc.path>
 
-    <zookeeper.version>3.4.6.3.1.4.0-315</zookeeper.version>
+    <zookeeper.version>3.8.4</zookeeper.version>
     <curator.version>2.12.0</curator.version>
     <findbugs.version>3.0.0</findbugs.version>
     <spotbugs.version>3.1.0-RC1</spotbugs.version>
-    <dnsjava.version>2.1.7</dnsjava.version>
+    <dnsjava.version>3.6.0</dnsjava.version>
 
     <guava.version>28.0-jre</guava.version>
     <guice.version>4.0</guice.version>
@@ -100,7 +100,7 @@
     <mssql.version>6.2.1.jre7</mssql.version>
     <okhttp.version>2.7.5</okhttp.version>
 
-    <bouncycastle.version>1.60</bouncycastle.version>
+    <bouncycastle.version>1.70</bouncycastle.version>
 
     <!-- define the Java language version used by the compiler -->
     <javac.version>1.8</javac.version>
@@ -135,14 +135,14 @@
     <native-maven-plugin.version>1.0-alpha-8</native-maven-plugin.version>
     <surefire.fork.timeout>900</surefire.fork.timeout>
     <aws-java-sdk.version>1.11.375</aws-java-sdk.version>
-    <hsqldb.version>2.3.4</hsqldb.version>
+    <hsqldb.version>2.7.1</hsqldb.version>
     <frontend-maven-plugin.version>1.5</frontend-maven-plugin.version>
     <!-- the version of Hadoop declared in the version resources; can be overridden
     so that Hadoop 3.x can declare itself a 2.x artifact. -->
     <declared.hadoop.version>${project.version}</declared.hadoop.version>
 
     <swagger-annotations-version>1.5.4</swagger-annotations-version>
-    <snakeyaml.version>1.16</snakeyaml.version>
+    <snakeyaml.version>2.0</snakeyaml.version>
     <hbase.one.version>1.2.6</hbase.one.version>
     <hbase.two.version>2.0.0-beta-1</hbase.two.version>
     <gcs.version>1.9.10.3.1.4.0-315</gcs.version>
@@ -599,7 +599,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-compress</artifactId>
-        <version>1.4.1</version>
+        <version>1.26.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.commons</groupId>
@@ -624,7 +624,7 @@
       <dependency>
         <groupId>commons-net</groupId>
         <artifactId>commons-net</artifactId>
-        <version>3.6</version>
+        <version>3.9.0</version>
       </dependency>
       <dependency>
         <groupId>javax.servlet</groupId>
@@ -681,7 +681,7 @@
       <dependency>
         <groupId>org.codehaus.plexus</groupId>
         <artifactId>plexus-utils</artifactId>
-        <version>2.0.5</version>
+        <version>3.0.24</version>
       </dependency>
       <dependency>
         <groupId>org.codehaus.plexus</groupId>
@@ -777,19 +777,19 @@
       <dependency>
         <groupId>io.netty</groupId>
         <artifactId>netty</artifactId>
-        <version>3.10.5.Final</version>
+        <version>3.10.6.Final</version>
       </dependency>
 
       <dependency>
         <groupId>io.netty</groupId>
         <artifactId>netty-all</artifactId>
-        <version>4.0.52.Final</version>
+        <version>4.1.119.Final</version>
       </dependency>
 
       <dependency>
         <groupId>commons-io</groupId>
         <artifactId>commons-io</artifactId>
-        <version>2.5</version>
+        <version>2.14.0</version>
       </dependency>
 
       <dependency>
@@ -862,12 +862,12 @@
       <dependency>
         <groupId>org.apache.mina</groupId>
         <artifactId>mina-core</artifactId>
-        <version>2.0.16</version>
+        <version>2.0.27</version>
       </dependency>
       <dependency>
         <groupId>org.apache.sshd</groupId>
         <artifactId>sshd-core</artifactId>
-        <version>1.6.0</version>
+        <version>2.1.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.ftpserver</groupId>
@@ -907,7 +907,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-configuration2</artifactId>
-        <version>2.1.1</version>
+        <version>2.10.1</version>
         <exclusions>
           <exclusion>
             <groupId>org.apache.commons</groupId>
@@ -948,7 +948,7 @@
       <dependency>
         <groupId>com.fasterxml.woodstox</groupId>
         <artifactId>woodstox-core</artifactId>
-        <version>5.0.3</version>
+        <version>5.4.0</version>
       </dependency>
       <dependency>
         <groupId>org.codehaus.jackson</groupId>
@@ -1064,7 +1064,7 @@
       <dependency>
         <groupId>org.jdom</groupId>
         <artifactId>jdom</artifactId>
-        <version>1.1</version>
+        <version>2.0.2</version>
       </dependency>
       <dependency>
         <groupId>com.googlecode.json-simple</groupId>
@@ -1149,7 +1149,7 @@
       <dependency>
         <groupId>org.codehaus.jettison</groupId>
         <artifactId>jettison</artifactId>
-        <version>1.1</version>
+        <version>1.5.4</version>
         <exclusions>
           <exclusion>
             <groupId>stax</groupId>
@@ -1260,7 +1260,7 @@
       <dependency>
         <groupId>com.nimbusds</groupId>
         <artifactId>nimbus-jose-jwt</artifactId>
-        <version>4.41.1</version>
+        <version>9.37.2</version>
         <scope>compile</scope>
         <exclusions>
           <exclusion>
@@ -1283,7 +1283,7 @@
           -->
         <groupId>net.minidev</groupId>
         <artifactId>json-smart</artifactId>
-        <version>2.3</version>
+        <version>2.4.9</version>
       </dependency>
       <dependency>
         <groupId>org.skyscreamer</groupId>
